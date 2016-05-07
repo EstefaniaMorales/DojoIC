@@ -5,8 +5,11 @@ var assert = require('should');
 
 describe('appempic', function () {
 
-  it('should be awesome', function () {
-    appempic().should.equal('awesome');
+  it('El nombre debe ser Estefania', function () {
+    appempic.getName().should.equal('Estefania');
+  });
+   it('El apellido debe ser Morales', function () {
+    appempic.getLastName().should.equal('Morales');
   });
 
 });
